@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.graph_objs as go
 
 
-gold = 'sydney stewart'
+gold = 'sydney stewart !!!'
 
 print('syd')
 print(gold)
