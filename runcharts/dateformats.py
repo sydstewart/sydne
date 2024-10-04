@@ -51,8 +51,7 @@ with col2:
 
             first_date = df[datecol].min()
             fin_date = df[datecol].max()
-            go.Scatter(df,)
-
+          
         
             all_dates = pd.DataFrame({datecol:pd.date_range(start=first_date, end=fin_date,freq=freq)})
             # st.write('all', all_dates)
@@ -63,7 +62,7 @@ with col2:
             df[datecol] = df[datecol].dt.strftime('%Y-%m-%d')
             Date = df[datecol].unique().tolist()
 
-            # st.write('Date', Date)
+            # ggggst.write('Date', Date)
 
             max_value = datetime.strptime(max(Date), '%Y-%m-%d')
             min_value = datetime.strptime(min(Date), '%Y-%m-%d')
